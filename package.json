@@ -1,0 +1,15 @@
+{
+  "name": "ascii-art-generator",
+  "version": "1.0.0",
+  "description": "project for SCM",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "husky": "^9.0.11"
+  }
+}
