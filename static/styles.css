@@ -1,0 +1,101 @@
+
+/* Reset default browser styles */
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10+Charted&family=Sedgwick+Ave+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jersey+20&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Jersey 20';
+    margin: 0;
+    height: 100vh;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(15vh);
+}
+
+.heading {
+    font-size: 4.5rem;
+    margin: 1rem 0;
+    text-align: center;
+    text-decoration: none;
+}
+#dropbox{
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(45, 45, 47, 0.75);
+    animation: glowing-button-85 20s linear infinite;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    border: 2px dashed #ccc;
+    padding: 20px;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+#dropbox::before{
+    content: "";
+  background: linear-gradient(
+    45deg,
+    purple,
+    blue,
+    purple
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+#dropbox:after{
+    z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+ }
+}
+
+
+
