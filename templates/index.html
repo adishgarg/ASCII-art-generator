@@ -1,68 +1,48 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                                                    <title>Document</title>
-    <link rel="stylesheet" href="C:\Users\HARMAN\Desktop\ASCII-art-generator\static\styles.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="static/styles.css"> <!-- Using relative path -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
-        
-        </style>
-      <script src="https://kit.fontawesome.com/434e47e12a.js" crossorigin="anonymous"></script>
+    </style>
+    <script src="https://kit.fontawesome.com/434e47e12a.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <h1 class="heading">ASCII Art-Generator</h1>
+        <h1 class="heading">ASSCII Art-Generator</h1>
     </header>
     <div class="container">
-        <form action="/ascii" method="post" enctype="multipart/form-data">
-            <div id="dropbox">
-                                                          <p>Drag and drop or upload an image here</p>
-                <input type="file" id="imageInput" accept="image/*" style="margin-top: 20px;" name="image">
-                <input type="submit" value="Upload">
-            </div>
-        </form>
+    <div id="dropbox">
+        <p>Drag and drop or upload an image here</p>
+        <input type="file" id="imageInput" accept="image/*" style="margin-top: 20px;">
+    </div>
 
     <script>
-                                                                      var dropbox = document.getElementById('dropbox');
+        var dropbox = document.getElementById('dropbox');
 
-        dropbox.addEventListener('dragenter', function(e) {
-            e.preventDefault();
-            dropbox.style.background = '#f7f7f7';
+        dropbox.addEventListener("dragenter", function (e) {
+          e.preventDefault();
+          dropbox.style.background = "#f7f7f7";
         });
 
-        dropbox.addEventListener('dragover', function(e) {
-            e.preventDefault();
+        dropbox.addEventListener("dragover", function (e) {
+          e.preventDefault();
         });
 
-        dropbox.addEventListener('dragleave', function(e) {
+        dropbox.addEventListener("dragleave", function (e) {
+          e.preventDefault();
+          dropbox.style.background = "";
+        });
+
+        dropbox.addEventListener('drop', function(e) {
             e.preventDefault();
             dropbox.style.background = '';
+
+            var file = e.dataTransfer.files[0];
         });
-
-                                        dropbox.addEventListener('drop', function(e) {
-                                            e.preventDefault();
-                                            dropbox.style.background = '';
-
-                                            var file = e.dataTransfer.files[0];
-                                        });
-                                    </script>
-                                    <div id="asciiArt">
-                                        <pre><code id="asciiCode">{{ ascii_image | safe }}</code></pre>
-                                    </div>
-    <button id="copyButton">Copy</button>
-    
-    <script>
-    document.getElementById('copyButton').addEventListener('click', function() {
-        var range = document.createRange();
-        range.selectNode(document.getElementById('asciiCode'));
-        window.getSelection().removeAllRanges();
-        window.getSelection().addRange(range);
-        document.execCommand('copy');
-        window.getSelection().removeAllRanges();
-    });
     </script>
      <div class="Github">
         <a href="https://github.com/adishgarg/ASCII-art-generator">
@@ -70,5 +50,5 @@
         </a>
     </div>
     </div>
-</body>
+  </body>
 </html>
