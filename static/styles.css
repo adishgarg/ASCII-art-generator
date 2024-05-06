@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: black;
+    background-color: #1A1A1A;
     color: white;
     font-family: 'Jersey 20';
     margin: 0;
@@ -110,4 +110,7 @@ body {
 
 #copyButton {
   display: block;
+}
+.Github {
+  margin-top: 50px;
 }
