@@ -35,8 +35,7 @@ def ascii():
         new_image_data = pixels_to_ascii(grayify(resize_image(image)))
         pixel_count = len(new_image_data)  
         ascii_image = "\n".join([new_image_data[index:(index+100)] for index in range(0, pixel_count, 100)])
-        return ascii_image
-
+        return render_template('index.html', ascii_image=ascii_image)
 if __name__ == '__main__':
     app.run(debug=True)
 
