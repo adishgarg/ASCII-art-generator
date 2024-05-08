@@ -39,4 +39,12 @@ Welcome to our ASCII art generator website! This web application allows you to g
 
 Contributions are welcome! If you have any ideas for improvement or new features, feel free to open an issue or submit a pull request.
 
-## 
+## Contact Us 📧
+
+If you have any questions, suggestions, or feedback, feel free to reach out to us:
+
+- Harman Kaur: [mailto:harman2089.be23@chitkara.edu.in]
+- Adish Garg: [mailto:adish2090.be23@chitkara.edu.in]
+
+
+
