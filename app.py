@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request
-import PIL.Image
+from PIL import Image
+import io
 
 app = Flask(__name__)
 
@@ -29,13 +30,12 @@ def home():
 def ascii():
     if request.method == 'POST':
         f = request.files['image']
-        f.save(f.filename)
-        path = f.filename
-        image = PIL.Image.open(path)
+        image = Image.open(io.BytesIO(f.read()))
         new_image_data = pixels_to_ascii(grayify(resize_image(image)))
         pixel_count = len(new_image_data)  
         ascii_image = "\n".join([new_image_data[index:(index+100)] for index in range(0, pixel_count, 100)])
-        return render_template('index.html', ascii_image=ascii_image)
+        return ascii_image
+
 if __name__ == '__main__':
     app.run(debug=True)
 
