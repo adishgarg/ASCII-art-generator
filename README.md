@@ -18,13 +18,13 @@ Welcome to our ASCII art generator website! This web application allows you to g
 
 - **Backend:** Python 🐍
 - **Frontend:** HTML, CSS, JavaScript
-- **Libraries:** PIL (Python Imaging Library) or OpenCV for image processing
+- **Libraries:** PIL (Python Imaging Library) and io for image processing, flask for web framework
 
 ## Installation ⚙️
 
 1. Clone this repository:
 
-    git clone https://github.com/your_username/ascii-art-generator.
+    git clone https://github.com/adishgarg/ascii-art-generator.
 
 2. Access the application through your web browser at `http://localhost:5000`.
 
