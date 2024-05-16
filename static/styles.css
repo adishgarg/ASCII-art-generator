@@ -119,5 +119,16 @@ body {
   transform: translateY(15vh);
 }
 .button{
-  
+  padding: 10px 20px;
+  background-color: white;
+  color: black;
+  border: none;
+  position: relative;
+  top:20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.button:hover {
+  transform: scale(1.1);
 }
