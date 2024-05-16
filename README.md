@@ -22,21 +22,13 @@ Welcome to our ASCII art generator website! This web application allows you to g
 
 - **Backend:** Python 🐍
 - **Frontend:** HTML, CSS, JavaScript
-<<<<<<< HEAD
-- **Libraries:** PIL (Python Imaging Library) and io for image processing, flask for web framework.
-=======
 - **Libraries:** PIL (Python Imaging Library) and io for image processing, flask for web framework
->>>>>>> 0f71ae0c6bd2f423cba8184b93bbf003ea111186
 
 ## Installation ⚙️
 
 1. Clone this repository:
 
-<<<<<<< HEAD
     git clone https://github.com/adishgarg/ASCII-art-generator.
-=======
-    git clone https://github.com/adishgarg/ascii-art-generator.
->>>>>>> 0f71ae0c6bd2f423cba8184b93bbf003ea111186
 
 2. Access the application through your web browser at `http://localhost:5000`.
 
@@ -57,9 +49,3 @@ If you have any questions, suggestions, or feedback, feel free to reach out to u
 
 - Harman Kaur: [mailto:harman2089.be23@chitkara.edu.in]
 - Adish Garg: [mailto:adish2090.be23@chitkara.edu.in]
-
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 0f71ae0c6bd2f423cba8184b93bbf003ea111186
