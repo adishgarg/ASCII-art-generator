@@ -1,0 +1,6 @@
+{
+    "version": 2,
+    "name": "ASCII-art-generator",
+    "builds": [{ "src": "app.py", "use": "@vercel/python" }],
+    "routes": [{ "src": "/.*", "dest": "app.py" }]
+  }
