@@ -49,3 +49,4 @@ If you have any questions, suggestions, or feedback, feel free to reach out to u
 
 - Harman Kaur: [mailto:harman2089.be23@chitkara.edu.in]
 - Adish Garg: [mailto:adish2090.be23@chitkara.edu.in]
+- Harjas Singh Rai: [mailto:harjas2088.be23@chitkara.edu.in]
