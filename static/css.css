@@ -101,11 +101,11 @@ body {
     bottom: 20px;
     right: 20px;
 } */
+
 .Github {
-  margin-top: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transform: translateY(5vh);
-  font-size: xx-large;
-}
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(15vh);
+  }

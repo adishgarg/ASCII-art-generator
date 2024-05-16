@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ASCII Art Generator - Upload</title>
+    <title>ASCII Art Generator - Art</title>
     <link rel="stylesheet" href="static/styles.css">
 </head>
 <body>
@@ -11,19 +11,14 @@
         <h1 class="heading">ASCII Art Generator</h1>
     </header>
     <div class="container">
-        <form action="/ascii" method="POST" enctype="multipart/form-data" id="upload-form">
-            <div id="dropbox">
-                <p>Drag and drop or upload an image here</p>
-                <input type="file" id="imageInput" name="image" accept="image/*" style="margin-top: 20px;">
-                <button type="submit">Upload</button>
-            </div>
-        </form>
+        <div id="asciiArtContainer">
+            <pre>{{ ascii_art }}</pre>
+        </div>
     </div>
     <div class="Github">
         <a href="https://github.com/adishgarg/ASCII-art-generator">
             <i class="fa-brands fa-github-alt"> Github</i>
         </a>
     </div>
-    <script src="static/index.js"></script>
 </body>
 </html>
