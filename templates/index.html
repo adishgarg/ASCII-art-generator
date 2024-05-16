@@ -19,11 +19,15 @@
           <div id="dropbox">
               <p>Drag and drop or upload an image here</p>
               <input type="file" id="imageInput" name="image" accept="image/*" style="margin-top: 20px;">
-              <button type="submit">Upload</button>
+              <button type="submit" class="button">Upload</button>
           </div>
       </div>
   </form>
-
+  <div class="Github">
+    <a href="https://github.com/adishgarg/ASCII-art-generator">
+        <i class="fa-brands fa-github-alt"> Github</i>
+    </a>
+</div>
     <script>
         var dropbox = document.getElementById('dropbox');
 
@@ -48,13 +52,5 @@
             var file = e.dataTransfer.files[0];
         });
     </script>
-    
-     <div class="Github">
-        <a href="https://github.com/adishgarg/ASCII-art-generator">
-            <i class="fa-brands fa-github-alt"> Github</i>
-        </a>
-    </div>
-    </div>
   </body>
-</html>
-
+</html> 
