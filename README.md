@@ -2,10 +2,14 @@
 
 Welcome to our ASCII art generator website! This web application allows you to generate ASCII art from text or images using Python as the backend. 🖼️
 
-# Team Members
-1. Harjas Singh Rai
-2. Harman Kaur
-3. Adish Garg
+# Team Members 👥
+
+| Serial No. |   Roll No.    |   Name           | Role          | 
+|------------|---------------|------------------|---------------|
+| 1          |   2310992088  | Harjas Singh Rai | Tester        | 
+| 2          |   2310992089  | Harman Kaur      | Designer      | 
+| 3          |   2310992090  | Adish Garg       | Developer     | 
+
 
 ## Features ✨
 
@@ -18,13 +22,13 @@ Welcome to our ASCII art generator website! This web application allows you to g
 
 - **Backend:** Python 🐍
 - **Frontend:** HTML, CSS, JavaScript
-- **Libraries:** PIL (Python Imaging Library) or OpenCV for image processing
+- **Libraries:** PIL (Python Imaging Library) and io for image processing, flask for web framework
 
 ## Installation ⚙️
 
 1. Clone this repository:
 
-    git clone https://github.com/your_username/ascii-art-generator.
+    git clone https://github.com/adishgarg/ASCII-art-generator.
 
 2. Access the application through your web browser at `http://localhost:5000`.
 
@@ -45,6 +49,4 @@ If you have any questions, suggestions, or feedback, feel free to reach out to u
 
 - Harman Kaur: [mailto:harman2089.be23@chitkara.edu.in]
 - Adish Garg: [mailto:adish2090.be23@chitkara.edu.in]
-
-
-
+- Harjas Singh Rai: [mailto:harjas2088.be23@chitkara.edu.in]
